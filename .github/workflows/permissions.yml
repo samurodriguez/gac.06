@@ -1,8 +1,8 @@
 name: learning permissions
-on: push
+on: workflow_dispatch
 jobs:
   create-file:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: write
     steps:
