@@ -1,0 +1,12 @@
+name: learning permissions
+on: push
+jobs:
+  create-file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: |
+          echo "holaa" >> README.md
+          git add .
+          git commit -m "add README.md"
+          git push
